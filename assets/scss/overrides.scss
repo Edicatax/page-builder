@@ -1,0 +1,38 @@
+.header__right .flag {
+  border-radius: 50%;
+  height: 1.2em;
+
+  &.flag-icon-squared {
+    width: 1.2em;
+  }
+
+  &:before {
+    content: "";
+  }
+}
+
+.header__right > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.theme-toggle {
+  @media(min-width:684px) {
+    &:nth-last-child(2) {
+      padding-right: 18px;
+      border-right: 1px solid;
+      margin-right: 18px;
+    }
+  }
+
+  @media #{$media-size-phone} {
+    margin-left: 10px;
+  }
+}
+
+.footer__content {
+  font-size: 0.5rem;
+}
