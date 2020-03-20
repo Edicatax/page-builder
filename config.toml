@@ -65,6 +65,11 @@ theme = "hello-friend-ng"
       logoText = "cd /home/"
       logoHomeLink = "/"
 
+    [[languages.en.menu.main]]
+      identifier = "about"
+      name       = "About"
+      url        = "/about"
+
   [languages.nl]
     title = "Yri Davies"
     subtitle = "Home"
@@ -77,11 +82,6 @@ theme = "hello-friend-ng"
       logoHomeLink = "/"
 
     [[languages.nl.menu.main]]
+      identifier = "about"
       name = "Over mij"
       url  = "/about"
-
-  # And you can even create generic menu
-  [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "/about"
