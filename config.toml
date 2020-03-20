@@ -1,0 +1,87 @@
+baseurl = "/"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+
+[Site]
+  [Author]
+    name = "Yri Davies"
+
+# Social icons
+[[params.social]]
+  name = "email"
+  url  = "mailto:yridavies@sterrk.nl"
+
+[[params.social]]
+  name = "github"
+  url  = "https://github.com/Edicatax"
+
+[[params.social]]
+  name = "gitlab"
+  url  = "https://gitlab.com/Edicatax"
+
+[[params.social]]
+  name = "linkedin"
+  url  = "https://linkedin.com/in/yri-davies"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Metadata mostly used in document's head
+  description = "My new homepage or blog"
+  keywords = "homepage, blog"
+  images = [""]
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+  # Subtitle on the home page
+  homeSubtitle = "Full-Stack Web Developer // Team Lead"
+
+  [logo]
+    logoText = "cd /home/"
+    logoHomeLink = "/"
+
+  # Debug
+  enableMissingTranslationPlaceholders = true
+
+[languages]
+  [languages.en]
+    title = "Yri Davies"
+    subtitle = "Home"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "cd /home/"
+      logoHomeLink = "/"
+
+  [languages.nl]
+    title = "Yri Davies"
+    subtitle = "Home"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Lees andere posts"
+
+    [languages.nl.params.logo]
+      logoText = "cd /home/"
+      logoHomeLink = "/"
+
+    [[languages.nl.menu.main]]
+      name = "Over mij"
+      url  = "/about"
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
